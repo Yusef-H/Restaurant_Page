@@ -1,0 +1,69 @@
+html{
+    height: 100%;
+}
+  
+
+/* Set font styles and sizes */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+}
+
+/* Set the background color and image */
+body {
+    background-color: #f5f5f5;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Center the content div horizontally */
+.content {
+    width: 80%;
+    justify-self: center;
+    padding-top: 50px;
+}
+
+/* Set the styles for the header div */
+.init-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 50px;
+}
+
+/* Set the styles for the title div */
+.init-header div {
+font-size: 36px;
+font-weight: bold;
+color: #ffffff;
+text-shadow: 2px 2px 2px #000000;
+}
+
+/* Set the styles for the options buttons div */
+.option-buttons {
+display: flex;
+}
+
+/* Set the styles for the option button */
+.option-buttons button {
+margin-right: 10px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+color: #ffffff;
+background-color: #ff0000;
+cursor: pointer;
+}
+
+/* Set the hover styles for the option button */
+.option-buttons button:hover {
+background-color: #990000;
+}
