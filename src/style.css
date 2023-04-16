@@ -72,7 +72,7 @@ button{
 button:focus{
     background-color: rgb(244, 248, 0);
 }
-.home-board, .menu-board{
+.home-board, .menu-board, .contact-board{
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -91,14 +91,14 @@ button:focus{
 .menu-board{
     height: 1000px;
 }
-.home-title{
+.home-title, .contact-title{
     
     text-align: center;
     color: white;
     font-family: 'MyFont2';
     font-size: 35px ;
 }
-.hours-title, .location-title{
+.hours-title, .location-title, .phone-title{
     margin-top: 65px;
     font-family: 'MyFont2';
     font-size: 30px;
@@ -106,7 +106,7 @@ button:focus{
     align-self: flex-start;
     text-align: left;
 }
-.hours, .location{
+.hours, .location, .phones{
     padding: 25px;
     border: 2px dotted orange;
     border-radius: 8px;

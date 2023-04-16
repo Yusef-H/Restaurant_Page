@@ -17,9 +17,7 @@ function initialize(){
 }
 
 function clearContent(){
-    console.log('hi');
     content.removeChild(content.lastChild);
-    
 }
 
 function createTitle(){
