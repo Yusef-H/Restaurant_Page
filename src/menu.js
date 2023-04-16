@@ -11,23 +11,23 @@ function displayMenu(){
     title.classList.add('home-title');
     menuBoard.appendChild(title);
 
-    addMenuItem(tomaHawk, menuBoard);
-    addMenuItem(fillet, menuBoard);
+    addMenuItem(tomaHawk, 'Tomahawk Steak', menuBoard);
+    addMenuItem(fillet, 'Fillet Steak', menuBoard);
 
     content.appendChild(menuBoard);
 
     return menuBoard;
 }
 
-function addMenuItem(tomaHawk, menuBoard){
+function addMenuItem(menuItem, itemTitle, menuBoard){
     const firstItem = document.createElement('div');
     firstItem.classList.add('menu-item');
     const firstItemImage = new Image();
-    firstItemImage.src = tomaHawk;
+    firstItemImage.src = menuItem;
     firstItemImage.classList.add('image');
     firstItem.appendChild(firstItemImage);
     const firstItemInfo = document.createElement('div');
-    firstItemInfo.innerHTML = 'Juicy Tomahawk Steak';
+    firstItemInfo.innerHTML = itemTitle;
     firstItemInfo.classList.add('item-info');
     firstItem.appendChild(firstItemInfo);
     menuBoard.append(firstItem);
