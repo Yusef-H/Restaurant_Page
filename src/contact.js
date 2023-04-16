@@ -19,6 +19,7 @@ function displayContact(){
     
     phones.classList.add('phones');
     contactBoard.appendChild(phones);
+    
     content.append(contactBoard);
 }
 
