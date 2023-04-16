@@ -19,9 +19,6 @@ html{
     
 }
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,6 +34,7 @@ body{
 
 .init-header{
     font-family: 'MyFont';
+    align-self: center;
     padding: 10px;
     color: rgb(221, 221, 236);
     font-size: clamp(40px,10vmin,100px);
@@ -69,28 +67,22 @@ button{
     border-radius: 8px;
     
 } 
+button:hover{
+    background-color: rgb(244, 248, 0);
+}
 button:focus{
     background-color: rgb(244, 248, 0);
 }
 .home-board, .menu-board, .contact-board{
-    padding: 15px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
-    
+    margin-top: 30px;  
     border-radius: 8px;
     background-color: rgba(0,0,0,0.6);
-    border: 2px solid red;
-    width: 500px;
-    height: 650px;
 }
-.home-board{
-    height: 650px;
-}
-.menu-board{
-    height: 1000px;
-}
+
 .home-title, .contact-title{
     
     text-align: center;
