@@ -1,14 +1,24 @@
 import backgroundIcon from './images/background.jpg';
 const content = document.querySelector('.content');
+const homeButton = document.createElement('button');
+const menuButton = document.createElement('button');
+const contactButton = document.createElement('button');
+const buttons = [homeButton, menuButton, contactButton];
 
 const header = document.createElement('div');
 function initialize(){
     const title = createTitle();
-    const optionsButtons = createOptionsButtons();
+    const optionsButtons = initOptionsButtons();
 
     
     content.append(title);
     content.append(optionsButtons);
+    
+}
+
+function clearContent(){
+    console.log('hi');
+    content.removeChild(content.lastChild);
     
 }
 
@@ -21,16 +31,13 @@ function createTitle(){
     return header;
 }
 
-function createOptionsButtons(){
+function initOptionsButtons(){
     const optionsButtons = document.createElement('div');
     optionsButtons.classList.add('option-buttons');
     header.appendChild(optionsButtons);
 
-    const homeButton = document.createElement('button');
-    homeButton.classList.add('home-button');
-    const menuButton = document.createElement('button');
+    homeButton.classList.add('home-button');    
     menuButton.classList.add('menu-button');
-    const contactButton = document.createElement('button');
     contactButton.classList.add('contact-button');
 
     homeButton.innerHTML = "Home";
@@ -43,4 +50,4 @@ function createOptionsButtons(){
     return optionsButtons;
 }
 
-export default initialize;
+export {initialize, clearContent, buttons};

@@ -3,9 +3,9 @@ import fillet from './images/fillet.jpg';
 
 const menuBoard = document.createElement('div');
 const content = document.querySelector('.content');
+
 function displayMenu(){    
     menuBoard.classList.add('menu-board');
-
     const title = document.createElement('div');
     title.innerHTML = "Menu";
     title.classList.add('home-title');

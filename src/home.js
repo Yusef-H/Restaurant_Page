@@ -31,12 +31,7 @@ function displayHome(){
     location.innerHTML = "Dalyet El Carmel - Main Street";
     location.classList.add('location');
     board.appendChild(location);
-
-
     
-    
-                    
-
     content.appendChild(board);
 }
 export default displayHome;
