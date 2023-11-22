@@ -13,10 +13,8 @@
 }
 
 
-html{
-    
-    height: 100%;
-    
+:root{
+    font-size: 10px;
 }
 body{
     background-image: url('./images/background.jpg');
@@ -24,6 +22,7 @@ body{
     background-attachment: fixed;
     background-size: cover; 
     background-position: center center;
+    padding: 20px;
 }
 
 .content{
@@ -35,9 +34,9 @@ body{
 .init-header{
     font-family: 'MyFont';
     align-self: center;
-    padding: 10px;
+    padding: 30px;
     color: rgb(221, 221, 236);
-    font-size: clamp(40px,10vmin,100px);
+    font-size: clamp(3rem,8vmin,6rem);
     background-color: rgba(0,0,0,0.8); 
     border-radius: 8px;
     
@@ -48,8 +47,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 40px;
-    width: 300px;
+    height: 4rem;
+    width: 30rem;
 }
 
 button{
@@ -58,27 +57,25 @@ button{
     align-items: center; 
     color:rgb(15, 15, 29);
     background-color: rgb(255, 255, 255);
-
     border: none;
     font-family: 'MyFont2';
-    
-    width: 80px;
-    font-size: 15px;
-    border-radius: 8px;
-    
+    width: 8rem;
+    font-size: 1.75rem;
+    border-radius: 8px; 
 } 
 button:hover{
+    cursor: pointer;
     background-color: rgb(244, 248, 0);
 }
 button:focus{
     background-color: rgb(244, 248, 0);
 }
 .home-board, .menu-board, .contact-board{
-    padding: 40px;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;  
+    margin-top: 3rem;  
     border-radius: 8px;
     background-color: rgba(0,0,0,0.6);
 }
@@ -88,12 +85,12 @@ button:focus{
     text-align: center;
     color: white;
     font-family: 'MyFont2';
-    font-size: 35px ;
+    font-size: 3rem;
 }
 .hours-title, .location-title, .phone-title{
     margin-top: 65px;
     font-family: 'MyFont2';
-    font-size: 30px;
+    font-size: 3rem;
     color: white;
     align-self: flex-start;
     text-align: left;
@@ -105,7 +102,7 @@ button:focus{
     margin-top: 10px;
     text-align: center;
     font-family: 'MyFont2';
-    font-size: 20px;
+    font-size: 2rem;
     color: white;
 }
 .location-title{
@@ -132,5 +129,5 @@ button:focus{
     margin-top: 10px;
     color: white;
     font-family: 'MyFont2';
-    font-size: 25px;
+    font-size: 2.5rem;
 }
